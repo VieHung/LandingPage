@@ -1,0 +1,20 @@
+---
+title: "Visualize Wifi Traffic"
+publishedAt: "2024-04-08"
+summary: "ESP32 microcontroller and a WS2812 LED matrix."
+images:
+  - "/images/projects/project-01/wifi_visualizer.jpg"
+---
+
+## Overview
+
+This project uses an ESP32 microcontroller and a WS2812 LED matrix to create a visual representation of WiFi packets. The visualization mimics the cascading digital rain effect seen in The Matrix, with packets streaming down the LED matrix in a dynamic and fluid manner. The firmware is written in Rust, leveraging the esp-hal-smartled library for LED control and ESP WiFi for network connectivity. This creates an engaging way to monitor network activity in real time.
+
+## Hardware Components
+- **ESP32**: The microcontroller used for running the firmware. This can be any ESP32 variant that is supported by Esp-hal crate.
+- **WS2812 Matrix**:  An addressable RGB LED matrix controlled via a single data pin.
+
+## Software Components
+
+- **ESP WiFi**: Enables network connectivity for the ESP32.
+- **esp-hal-smartled**: A Rust library for driving WS2812 and similar addressable LEDs.
